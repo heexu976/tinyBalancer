@@ -17,4 +17,4 @@ RUN go build -v -o _output/tinyBalancer ./
 FROM reg.hrlyit.com/base/ubuntu:20.04 
 COPY --from=builder /go/src/_output/tinyBalancer /opt/
 
-ENTRYPOINT ["./opt/balancer"]
+ENTRYPOINT ["./opt/tinyBalancer"]
