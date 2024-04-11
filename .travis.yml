@@ -10,8 +10,9 @@ os:
 
 install:
   - echo "install"
-
+  - echo "test"
+  - cd balancer && go test -v 
 script:
   - echo "script"
-  - make
+
 
