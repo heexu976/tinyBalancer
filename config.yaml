@@ -15,8 +15,8 @@ max_allowed: 100
 location:                     # route matching for reverse proxy
   - pattern: /
     proxy_pass:                   # URL of the reverse proxy
-    - "http://192.168.1.1"
-    - "http://192.168.1.2:1015"
-    - "https://192.168.1.2"
-    - "http://my-server.com"
+    - "http://172.22.105.81"
+    - "http://172.22.105.82"
+    - "http://172.22.105.83"
+    - "http://172.22.105.84"
     balance_mode: random     # load balancing algorithm
