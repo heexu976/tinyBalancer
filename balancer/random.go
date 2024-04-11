@@ -1,7 +1,7 @@
 /*
  * @Date: 2024-04-10 20:33:52
  * @LastEditors: HeXu
- * @LastEditTime: 2024-04-10 20:42:11
+ * @LastEditTime: 2024-04-11 14:33:15
  * @FilePath: /tinyBalancer/balancer/random.go
  */
 package balancer
@@ -29,7 +29,7 @@ func NewRandom(hosts []string) Balancer {
 	}
 }
 
-func (r Random) Balance(_ string) (string, error) {
+func (r *Random) Balance(_ string) (string, error) {
 	r.RLock()
 	defer r.RUnlock()
 	if len(r.hosts) == 0 {
