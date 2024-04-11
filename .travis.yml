@@ -14,5 +14,5 @@ install:
 
 script:
   - echo "script"
-  - make dev
+  - make
 
